@@ -1,0 +1,26 @@
+.footer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer-icons{
+    margin-bottom: 15px;
+}
+
+.footer .footer-icons a{
+    text-decoration: none;
+    padding-left: 20px; 
+}
+
+.copyright{
+    font-style: italic !important;
+    font-size: 0.875em !important;
+    color: #6c757d !important;
+    text-align: center !important;
+}
+
