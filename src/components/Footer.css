@@ -1,4 +1,4 @@
-.footer{
+footer{
     padding-top: 3rem;
     padding-bottom: 3rem;
     font-size: 1.25rem;
@@ -8,11 +8,7 @@
     align-items: center;
 }
 
-.footer .footer-icons{
-    margin-bottom: 15px;
-}
-
-.footer .footer-icons a{
+ .footer-icons a{
     text-decoration: none;
     padding-left: 20px; 
 }
@@ -24,3 +20,7 @@
     text-align: center !important;
 }
 
+.icons{
+    font-size: 37px;
+    color:#000;
+}
