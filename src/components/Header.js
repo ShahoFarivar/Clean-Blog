@@ -1,5 +1,4 @@
 import './Header.css'
-import '../../node_modules/bootstrap/dist/css/bootstrap.css'
 
 export default function Header({image,title,subHeader}){
     return(

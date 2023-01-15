@@ -2,12 +2,11 @@
     background: none;
     color :#fff !important;
     padding: 20px;
-    overflow: hidden;
     position: absolute !important;
     top: 0 !important;
     left:0 !important;
     right: 0 !important;
-    z-index: 1030 !important;
+    z-index: 1100 !important;
   }
   
   .sticky{
@@ -22,27 +21,141 @@
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
   }
 
-  .navbar .navbar-brand {
+  .navbar .navbar-brand h2{
     color: #fff;
     text-decoration: none;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 1.3rem ;
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
-    white-space: nowrap;
+    margin-right: 1rem;
   }
 
-  .navbar .navbar-brand:hover{
-    color: rgba(255, 255, 255, 0.8) !important;
+  .navbar .navbar-brand h2:hover{
+    color: rgba(255, 255, 255, 0.75) !important;
   }
 
   .navbar .nav-link{
+    font-size: 0.8rem;
     color: #fff !important;
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: 0.0625em;
     text-transform: uppercase;
   }
   .navbar .nav-link:hover {
-    color: rgba(255, 255, 255, 0.8) !important;
+    color: rgba(255, 255, 255, 0.75) !important;
   }
 
-  
+  .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+
+  }
+
+  .dashboard a{
+    font-size: 14px;
+  }
+
+.dashboard .btn-secondary-custom{
+  color: #fff !important;
+  background-color: none !important;
+  border-color: none !important;
+  border: none !important;
+}
+
+.dashboard .btn-secondary-custom:hover{
+  color: rgba(255, 255, 255, 0.75)!important;
+  background-color: none !important;
+  border-color: none !important;
+  border: none !important;
+}
+
+.dashboard .btn-secondary-custom:active{
+  color: rgba(255, 255, 255, 0.75)!important;
+  background-color: none !important;
+  border-color: none !important;
+  border: none !important;
+}
+
+.dashboard-item{
+  display:none !important;
+}
+
+.sign-in-icon i{
+  color: #dfdfdf !important;
+}
+.sign-in-icon i:hover{
+  color: #fff !important;
+}
+
+.sign-in-icon:active{
+  border-color: none !important;
+  border: none !important;
+}
+
+.sign-in, .sign-out{
+  cursor: pointer !important;
+}
+
+.avatar{
+  border-radius: 50%;
+  height: 32px;
+  width: 32px; 
+}
+
+.avatar:hover{
+  border: 3px solid rgba(0,0,0,0.1);
+}
+
+.welcome{
+  font-size: 14px;
+  cursor: default;
+}
+.welcome:hover{
+  background-color: transparent;
+}
+.welcome span{
+  font-weight: 600;
+}
+
+.signout{
+  font-size: 14px;
+}
+
+.avatar-dashboard{
+  border-radius: 50%;
+  height: 64px;
+  width: 64px; 
+  margin-right: 10px;
+}
+.welcome-dashboard{
+  font-size: 14px;
+}
+
+.nickname{
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .navbar-expand-lg{
+    background-color: rgba(0, 0, 0, 0.9) !important;
+  }
+  .navbar-expand-lg a, .navbar-expand-lg .nav-link{
+    color:#fff !important ;
+  }
+  .dashboard{
+    display: none;
+  }
+  .nav-divider{
+    height:1px;
+    color:#fff;
+    overflow: hidden;
+  }
+  .dashboard-item{
+    display:block !important;
+  }
+  .sign-in-icon{
+    display: none;
+  }
+}

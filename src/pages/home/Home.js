@@ -1,8 +1,9 @@
-// styles
-import './Home.css'
-
 import Articles from '../../components/Articles';
 import Header from '../../components/Header';
+import bgImage from '../../images/home-bg.jpg';
+
+// styles
+import './Home.css'
 
 export default function Home(){
 
@@ -11,7 +12,7 @@ export default function Home(){
             <Header
                 title="Clean Blog"
                 subHeader="A Blog Theme by Start Bootstrap"
-                image="https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/home-bg.jpg"
+                image={bgImage}
             />
 
             <section className="content">

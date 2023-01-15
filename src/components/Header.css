@@ -2,26 +2,27 @@
   .header-content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;  
     align-items: center;
     color: #fff;
   }
   
   .header-content h1{
-    font-size: 5rem;
+    font-size: 2.5rem;
     margin-bottom: 0.5rem;
     font-weight: 800;
     line-height: 1.2;
   }
   
   .header-content p{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.1;
+    margin-top: 0.625rem;
   }
 
   header{
-    font-size: 1.25rem;
+    font-size: 1rem;
     box-sizing: border-box;
     position: relative;
     margin-bottom: 3rem;
@@ -29,8 +30,8 @@
     background-color: #6c757d;
     background-size: cover;
     background-attachment: scroll;
-    padding-top: 12.5rem;
-    padding-bottom: 12.5rem;
+    padding-top: calc(8rem + 57px);
+    padding-bottom: 8rem;
   }
 
   header:before {
@@ -43,4 +44,13 @@
     background-color: #212529;
     opacity: 0.5;
 }
-  
+
+@media (min-width: 992px) {
+  .header-content h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+  }
+  .header-content p{
+    font-size: 1.2rem;
+  }
+}

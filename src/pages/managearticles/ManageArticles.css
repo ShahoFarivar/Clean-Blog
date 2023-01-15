@@ -1,0 +1,21 @@
+.edit, .delete{
+    text-align: center;
+    cursor: pointer;
+}
+
+.delete i:hover{
+    color: red;
+}
+
+.edit i:hover{
+    color: blue;
+}
+
+a{
+    text-decoration: none;
+}
+
+.delete button, .edit button{
+    background-color: transparent;
+    border: none;
+}

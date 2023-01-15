@@ -3,7 +3,7 @@
     font-size: 1.5rem;
 }
 
-.older-btn{ 
+.older-btn{
     padding: 1rem 1.75rem;
     letter-spacing: 0.0625em;
     text-transform: uppercase !important;
@@ -34,6 +34,7 @@
 }
 
 .older-btn a:hover{
-    text-decoration: none;  
+    text-decoration: none;
+    
 }
 

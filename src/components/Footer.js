@@ -5,6 +5,9 @@ import './Footer.css'
 
 
 export default function Footer(){
+    const date = new Date()
+    const year = date.getFullYear()
+    
     return(
             <footer className="border-top">
                 <div className="container px-4 px-lg-5 footer-icons">
@@ -27,7 +30,7 @@ export default function Footer(){
                                     </Link>
                                 </li>
                             </ul>
-                            <div className="copyright">Copyright © Clean Blog 2023</div>
+                            <div className="copyright">Copyright © {year} Clean Blog. </div>
                         </div>
                     </div>
                 </div>

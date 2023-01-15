@@ -1,13 +1,14 @@
-// styles
-import Header from '../../components/Header'
-
-import './Contact.css'
-
 import { useFetch } from '../../hooks/useFetch'
 import { useState } from 'react'
 
+import bgImage from '../../images/contact-bg.jpg'
+import Header from '../../components/Header'
+
+// styles
+import './Contact.css'
+
 export default function Contact(){
-    const url = 'http://localhost:3000/contactForm'
+    const url = 'https://api.minekraft.ir/messages'
     const {postData} = useFetch(url, 'POST')
 
     const [name, setName] = useState('')
@@ -31,7 +32,7 @@ export default function Contact(){
             <Header 
                 title="Contact Me"
                 subHeader="Have questions? I have answers."
-                image="https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/contact-bg.jpg"
+                image={bgImage}
             />
             <main className="mb-4">
             <div className="container px-4 px-lg-5">
@@ -57,9 +58,9 @@ export default function Contact(){
                                 <label htmlFor="message">Message</label>
                             </div>
                             <br/>
-                            <button className="btn btn-primary text-uppercase" id="submitButton">Send</button>
+                            <button className="btn btn-primary text-uppercase older-btn" id="submitButton">Send</button>
                         </form>
-                        <p class="submit">{sumbit}</p>
+                        <p className="submit">{sumbit}</p>
                         </div>
                     </div>
                 </div>
